@@ -50,28 +50,23 @@ Masaüstü uygulamada ilk olarak doküman yükleme işlemi
 gerçekleştirilecektir. Ardından yüklenen dokümandaki cümleleri graf
 yapısı haline getirerek ve bu graf yapısı görselleştirilecektir. Bu
 grafta her bir cümle bir düğümü temsil edecektir. Cümleler arasındaki
-anlamsal ilişki kurulmalı, aynı zamanda cümleler skorlanmalıdır. Belirli
-parametreleri
+anlamsal ilişki kurulmalı, aynı zamanda cümleler skorlanmalıdır.
 
 > **II.** **YÖNTEM**
 
 Bu projede kullanılan yöntem 5 aşamada anlatılacaktır.
 
 **1.Aşama** **(Masaüstü** **Arayüzü** **Geliştirilmesi** **ve** **Graf**
-**Yapısının** **Oluşturulması):** Öncelikle arayüzde bizden beklenen
+**Yapısının** **Oluşturulması**):
+
+Öncelikle arayüzde bizden beklenen
 isterler şunlardır:
 
-> • Kullanıcının doküman yükleyebileceği bir alan,
->
-> • Dokümanın graf halinde görüntüleneceği bir alan,
->
-> • Cümle benzerliği için threshold seçilebilecek bir araç, • Cümle
-> skorunun belirlenmesi için threshold
->
-> seçilebilecek bir araç.
->
-> • Cümle benzerliği algoritmasına alternatif oluşturursanız bunun
-> arayüzden seçilebilmesini sağlayan bir araç.
+> • Kullanıcının doküman yükleyebileceği bir alan
+> • Dokümanın graf halinde görüntüleneceği bir alan
+> • Cümle benzerliği için threshold seçilebilecek bir araç
+>  • Cümle skorunun belirlenmesi için threshold seçilebilecek bir araç
+> • Cümle benzerliği algoritmasına alternatif oluşturursanız bunun arayüzden seçilebilmesini sağlayan bir araç
 
 Kullanıcının programa dokuman yükleyebilmesi için Java Swing
 kütüphanesinden JFileChooser class'ını kullandık. Bu sınıfın nesnesi
@@ -89,31 +84,6 @@ JTextField kullandık. Bu threshold değerleri 0 ile 1 arasında double
 değişken türünde olması gerektiğinden gerkeli kontroller yapıldıktan
 sonra ilgili değişkenlere verilmiştir.
 
-> 1\. Cümle özel isim kontrolü (P1)
->
-*Cümledeki* *özel* *isim* *sayısı* */*
-> *Cümlenin* *uzunluğu*
->
-> 2\. Cümlede numerik veri olup olmadığının kontrolü (P2)
->
-> *Cümledeki* *numerik* *veri* *sayısı* */* *Cümlenin* *uzunluğu*
->
-> 3\. Cümle benzerliği threshold'unu geçen node'ların bulunması (P3)
->
-> *Tresholdu* *geçen* *nodeların* *bağlantı* *sayısı* */* *Toplam*
-> *bağlantı* *sayısı*
->
-> 4\. Cümlede başlıktaki kelimelerin olup olmadığının kontrolü (P4)
->
-> *Cümledeki* *başlıkta* *geçen* *kelime*
-> *sayısı* */* *Cümlenin* *uzunluğu*
->
-> 5\. Her kelimenin TF-IDF değerinin hesaplanması (P5). Buna göre
-> dokümandaki toplam kelime sayısının yüzde 10\'u 'tema kelimeler'
-> olarak belirlenmelidir.
->
-> *Cümlenin* *içinde* *geçen* *tema* *kelime* *sayısı* */* *Cümlenin*
-> *uzunluğu*
 
 **2.Aşama** **(Cümleler** **Arası** **Anlamsal** **İlişkinin**
 **Kurulması):**
@@ -140,6 +110,35 @@ yaptığımızda yine yeterli bir kaynağa rastlamadık. Biz de Web API
 kullanan Jsoup kütüphanesi yardımı ile bir web adresi üzerinden GET edip
 Web Scraping yaparak anlamsal benzerlik sonucunu çektik.
 
+
+**3.Aşama** **(Cümle** **Skoru** **Hesaplama** **Algoritmasının**
+**Geliştirilmesi):**
+
+Cümle skoru hesaplama sırasında aşağıdaki parametreleri oluşturduk :
+
+> 1\. Cümle özel isim kontrolü (P1)
+>
+>*Cümledeki* *özel* *isim* *sayısı* */* *Cümlenin* *uzunluğu*
+>
+> 2\. Cümlede numerik veri olup olmadığının kontrolü (P2)
+>
+> *Cümledeki* *numerik* *veri* *sayısı* */* *Cümlenin* *uzunluğu*
+>
+> 3\. Cümle benzerliği threshold'unu geçen node'ların bulunması (P3)
+>
+> *Tresholdu* *geçen* *nodeların* *bağlantı* *sayısı* */* *Toplam* *bağlantı* *sayısı*
+>
+> 4\. Cümlede başlıktaki kelimelerin olup olmadığının kontrolü (P4)
+>
+> *Cümledeki* *başlıkta* *geçen* *kelime* *sayısı* */* *Cümlenin* *uzunluğu*
+>
+> 5\. Her kelimenin TF-IDF değerinin hesaplanması (P5). Buna göre
+> dokümandaki toplam kelime sayısının yüzde 10\'u 'tema kelimeler'
+> olarak belirlenmelidir.
+>
+> *Cümlenin* *içinde* *geçen* *tema* *kelime* *sayısı* */* *Cümlenin* *uzunluğu*
+
+
 **4.Aşama** **(Skorlara** **Göre** **Metin** **Özetleme**
 **Algoritmasının** **Geliştirilmesi):**
 
@@ -158,10 +157,7 @@ skoru thresholdunu kullanarak dokumanın başından itibaren bu
 threshold'dan yüksek olup olmadığını kontrol ettik. Eğer öyleyse
 özetimize bu cümleyi ekledik.
 
-**3.Aşama** **(Cümle** **Skoru** **Hesaplama** **Algoritmasının**
-**Geliştirilmesi):**
 
-Cümle skoru hesaplama sırasında aşağıdaki parametreleri oluşturduk :
 
 **5.Aşama** **(Özetleme** **Başarısının** **ROUGE** **Skoru** **ile**
 **III.** **DENEYSEL** **SONUÇLAR** **Hesaplanması):**
@@ -171,8 +167,7 @@ aldık. Bu da tek bir kelime üzerinden 2 metnin Rouge skoru
 hesaplanmasını sağladık. Rouge skoru 3 parametreden oluşmaktadır.
 (Precision, Recall, F1Score)
 
-> • Precision : Eşleşen kelime sayısı / Oluşturulmuş özetteki kelime
-> sayısı
+> • Precision : Eşleşen kelime sayısı / Oluşturulmuş özetteki kelime sayısı
 >
 > • Recall : Eşleşen kelime sayısı / Referans özetteki kelime sayısı
 >
@@ -182,11 +177,11 @@ Böylelikle Rouge-1 skoru parametreleri hesaplanmış olur.
 
 Oluşturulan Classlar :
 
-> • DrawingGraph.java • Main.java
->
-> • MyFrame.java
->
-> •      RougeCalculator.java •      TFIDFCalculator.java
+>  • DrawingGraph.java
+>  • Main.java
+>  • MyFrame.java
+>  • RougeCalculator.java
+>  • TFIDFCalculator.java
 
 Kullanılan programlar: Eclipse
 
@@ -200,8 +195,7 @@ Kullanılan programlar: Eclipse
 
 4-EĞER alınan inputlar geçerli ise GİT 5 DEĞİLSE GİT 2
 
-5-HESAPLA cümle skoru, cümle benzerliği vs.
-GİT 6
+5-HESAPLA cümle skoru, cümle benzerliği vs. GİT 6
 
 6- YAZDIR Graf ve özet GİT 7
 
