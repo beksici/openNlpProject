@@ -89,8 +89,7 @@ sonra ilgili değişkenlere verilmiştir.
 
 > 1\. Cümle özel isim kontrolü (P1)
 >
-> ![](./wikv3wgm.png){width="3.5in"
-> height="1.9166666666666667in"}*Cümledeki* *özel* *isim* *sayısı* */*
+*Cümledeki* *özel* *isim* *sayısı* */*
 > *Cümlenin* *uzunluğu*
 >
 > 2\. Cümlede numerik veri olup olmadığının kontrolü (P2)
@@ -104,8 +103,7 @@ sonra ilgili değişkenlere verilmiştir.
 >
 > 4\. Cümlede başlıktaki kelimelerin olup olmadığının kontrolü (P4)
 >
-> ![](./jhu20vjp.png){width="3.5in"
-> height="1.4166666666666667in"}*Cümledeki* *başlıkta* *geçen* *kelime*
+> *Cümledeki* *başlıkta* *geçen* *kelime*
 > *sayısı* */* *Cümlenin* *uzunluğu*
 >
 > 5\. Her kelimenin TF-IDF değerinin hesaplanması (P5). Buna göre
@@ -143,8 +141,7 @@ Web Scraping yaparak anlamsal benzerlik sonucunu çektik.
 **4.Aşama** **(Skorlara** **Göre** **Metin** **Özetleme**
 **Algoritmasının** **Geliştirilmesi):**
 
-![](./ydr3lx5e.png){width="3.5in"
-height="1.677082239720035in"}Öncelikle bu aşamada, verilen dokumanın
+Öncelikle bu aşamada, verilen dokumanın
 uygun bir özetini çıkarmak için dokumanın konusundan ve anlatmak
 istediği çizgiden sapma olmadan uygun cümleleri özete eklememiz gerekir.
 Bunun için kendimizce 3.aşamada hesaplamış olduğumuz 5 adet
@@ -167,8 +164,7 @@ Cümle skoru hesaplama sırasında aşağıdaki parametreleri oluşturduk :
 **5.Aşama** **(Özetleme** **Başarısının** **ROUGE** **Skoru** **ile**
 **III.** **DENEYSEL** **SONUÇLAR** **Hesaplanması):**
 
-![](./idnpqiiq.png){width="3.5in"
-height="2.0416666666666665in"}Rouge-N algoritmasında n-grams değerini 1
+Rouge-N algoritmasında n-grams değerini 1
 aldık. Bu da tek bir kelime üzerinden 2 metnin Rouge skoru
 hesaplanmasını sağladık. Rouge skoru 3 parametreden oluşmaktadır.
 (Precision, Recall, F1Score)
@@ -182,9 +178,7 @@ hesaplanmasını sağladık. Rouge skoru 3 parametreden oluşmaktadır.
 
 Böylelikle Rouge-1 skoru parametreleri hesaplanmış olur.
 
-![](./rsjpnsbi.png){width="3.5in"
-height="2.0416666666666665in"}![](./sirasb4q.png){width="3.5in"
-height="1.6770833333333333in"}Oluşturulan Classlar :
+Oluşturulan Classlar :
 
 > • DrawingGraph.java • Main.java
 >
@@ -204,8 +198,7 @@ Kullanılan programlar: Eclipse
 
 4-EĞER alınan inputlar geçerli ise GİT 5 DEĞİLSE GİT 2
 
-![](./gdja2qbn.png){width="3.4895833333333335in"
-height="2.145832239720035in"}5-HESAPLA cümle skoru, cümle benzerliği vs.
+5-HESAPLA cümle skoru, cümle benzerliği vs.
 GİT 6
 
 6- YAZDIR Graf ve özet GİT 7
