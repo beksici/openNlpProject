@@ -1,4 +1,6 @@
-# Graf Tabanlı Metin Özetleme Projesi
+# Graph Based Text Summarization Project(Graf Tabanlı Metin Özetleme Projesi)
+
+## Proje raporu ve daha fazla bilgi için için Proje Raporu.pdf
 
 ***Bu*** ***projede*** ***verilen*** ***bir*** ***dokümandaki***
 ***cümlelerin*** ***graf*** ***yapısına*** ***dönüştürülmesi*** ***ve***
