@@ -32,4 +32,4 @@ grafta her bir cümle bir düğümü temsil edecektir. Cümleler arasındaki
 anlamsal ilişki kurulmalı, aynı zamanda cümleler skorlanmalıdır.
 
 Proje raporu için
-[a relative link]()
+[a relative link](Proje Raporu.pdf)
