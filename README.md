@@ -230,87 +230,61 @@ yapılan araştırmalar ışığında uygulamaya çalıştık.
 >
 > • https://youtu.be/lHFlAYaNfdo Alex Lee Java read text file easily
 >
-> • https://youtu.be/omNesNNSHTg Maven Projesi •
-> https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html part of speech
+> • https://youtu.be/omNesNNSHTg Maven Projesi 
+> • https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html part of speech
 >
-> • https://stackoverflow.com/questions/18590901/check-and-extract-a-number-from-a-string-in-java \--numeric var mı
-> içinde
+> • https://stackoverflow.com/questions/18590901/check-and-extract-a-number-from-a-string-in-java \--numeric var mı içinde
 >
 > • https://stackoverflow.com/questions/12806278/double-decimal-formatting-in-java \-- double formatlama
 >
-> •
-> https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html
-> \-- stemming lemmatization
+> •https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html \-- stemming lemmatization
 >
 > • https://gist.github.com/sebleier/554280 stopwords list
 >
-> •
-> https://www.techie-knowledge.co.in/2017/02/removing-stop-words-from-text-using-java.html
-> \-\-\-- hashset stopwords kaldırma
+> •https://www.techie-knowledge.co.in/2017/02/removing-stop-words-from-text-using-java.html \-\-\-- hashset stopwords kaldırma
 >
 > • https://stackoverflow.com/questions/5520693/in-java-remove-empty-elements-from-a-list-of-strings
 >
-> • https://huggingface.co/models \-\-- modeller bert ve word embeddin
-> için
+> • https://huggingface.co/models \-\-- modeller bert ve word embeddin için
 >
-> • https://huggingface.co/bert-base-cased/tree/main \-\-- modeller bert
-> ve word embeddin için
+> • https://huggingface.co/bert-base-cased/tree/main \-\-- modeller bert ve word embeddin için
 >
 > • https://stackoverflow.com/questions/2037832/semantic-similarity-between-sentences \-\-\-\-\-\-\--benzerlik için
-
-• https://www.tutorialkart.com/opennlp/apache-opennlp-tutorial/ \--
-opennlp tutorial
-
-• https://www.tutorialspoint.com/opennlp/index.html \-\-- opennlp
-tutorial
-
-•
-https://www.dailysmarty.com/posts/full-list-of-stopwords-as-a-ruby-array
-\-- stopwords için full
-
-•
-https://www.techiedelight.com/remove-punctuation-from-string-java/#:\~:text=The%20standard%20solution%20to%20remove,expression%20that%20finds%20punctuation%20characters. \-\--
-noktalama işaretleri kaldırmak için
-
-• https://jar-download.com/online-maven-download-tool.php \-\-- maven
-dependency to jar file
-
-• https://gist.github.com/guenodz/d5add59b31114 a3a3c66 \-\-- tf-idf
-hesabı için
-
-• https://mdurmuss.github.io/tf-idf-nedir/ \-\-- tf-idf bilgi
-
-• https://stackoverflow.com/questions/8115722/generating-unique-random-numbers-in-java uniq random numbers generate
-
-• http://swoogle.umbc.edu/SimService/index.html \-\-- semantic benzerlik
-için kullandım
-
-• https://github.com/tdebatty/java-string-similarity \-\--cosinus
-benzerliği için kullandım
-
-• https://tilores.io/cosine-similarity-online-tool \-\--online cosinus
-benzerliği için kullanıldı check için
-
-• https://www.tabnine.com/code/java/methods/opennlp.tools.stemmer.PorterStemmer/stem \-\--stemmerin kullanımı opennlp
-
-• https://opennlp.apache.org/docs/2.2.0/apidocs/op
-ennlp-tools/opennlp/tools/stemmer/snowball/Snowball Stemmer.html \-\-\--
-snowball kullanımı
-
-• http://text-processing.com/demo/stem/ \-\-\-\--stemmer için demo
-online web sitesi kontol için kullandım
-
-•
-https://www.geeksforgeeks.org/how-to-convert-hashmap-to-arraylist-in-java/
-\-\-\-- hashmap i arrayliste çevirmek için kullandım
-
-• https://stackoverflow.com/questions/6026813/co
-nverting-string-array-to-java-util-list \-\-- string to arraylist için
-kullandım
-
-• rouge hesabı için chatcpt kullanıldı.
-
-• https://youtu.be/TMshhnrEXlg rouge nedir
-
-• https://stackabuse.com/java-check-if-string-is-a-number/
-\-\-\-\-\-\-\-- String numeric veri içeriyor mu kontrolü
+>
+>• https://www.tutorialkart.com/opennlp/apache-opennlp-tutorial/ \--opennlp tutorial
+>
+>• https://www.tutorialspoint.com/opennlp/index.html \-\-- opennlp tutorial
+>
+• https://www.dailysmarty.com/posts/full-list-of-stopwords-as-a-ruby-array  \-- stopwords için full
+>
+>•https://www.techiedelight.com/removepunctuationfromstringjava/#:\~:text=The%20standard%20solution%20to%20remove,expression%20that%20finds%20punctuation%20characters. \-\--noktalama işaretleri kaldırmak için
+>
+>• https://jar-download.com/online-maven-download-tool.php \-\-- mavendependency to jar file
+>
+>• https://gist.github.com/guenodz/d5add59b31114 a3a3c66 \-\-- tf-idf hesabı için
+>
+>• https://mdurmuss.github.io/tf-idf-nedir/ \-\-- tf-idf bilgi
+>
+>• https://stackoverflow.com/questions/8115722/generating-unique-random-numbers-in-java uniq random numbers generate
+>
+>• http://swoogle.umbc.edu/SimService/index.html \-\-- semantic benzerlik için kullandım
+>
+>• https://github.com/tdebatty/java-string-similarity \-\--cosinus benzerliği için kullandım
+>
+>• https://tilores.io/cosine-similarity-online-tool \-\--online cosinus benzerliği için kullanıldı check için
+>
+>• https://www.tabnine.com/code/java/methods/opennlp.tools.stemmer.PorterStemmer/stem \-\--stemmerin kullanımı opennlp
+>
+>• https://opennlp.apache.org/docs/2.2.0/apidocs/opennlp-tools/opennlp/tools/stemmer/snowball/SnowballStemmer.html \-\-\--snowball kullanımı
+>
+>• http://text-processing.com/demo/stem/ \-\-\-\--stemmer için demo online web sitesi kontol için kullandım
+>
+>• https://www.geeksforgeeks.org/how-to-convert-hashmap-to-arraylist-in-java/ \-\-\-- hashmap i arrayliste çevirmek için kullandım
+>
+>• https://stackoverflow.com/questions/6026813/converting-string-array-to-java-util-list \-\-- string to arraylist için kullandım
+>
+> • rouge hesabı için chatcpt kullanıldı.
+>
+> • https://youtu.be/TMshhnrEXlg rouge nedir
+>
+>• https://stackabuse.com/java-check-if-string-is-a-number/ \-\-\-\-\-\-\-- String numeric veri içeriyor mu kontrolü
